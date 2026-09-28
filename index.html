@@ -288,9 +288,9 @@ const snd = {
 };
 
 /* ================= 状态 ================= */
-let map, baseAlive, gameState; // 'menu' | 'playing' | 'paused' | 'over' | 'win'
-let player, enemies, bullets, powerups, particles;
-let score, lives, level, totalEnemies, spawnQueue, spawnTimer;
+let map = null, baseAlive = true, gameState = 'menu'; // 'menu' | 'playing' | 'paused' | 'over'
+let player = null, enemies = [], bullets = [], powerups = [], particles = [];
+let score = 0, lives = 3, level = 1, totalEnemies = 0, spawnQueue = 0, spawnTimer = 0;
 let levelClearedFlash = 0;
 let transitioning = false;
 
